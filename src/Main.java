@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
         // Using JOptionPane to show the user an input dialog and asking the name of the .wav file. We add the extension manually later
-        String filename = "./Music/audio.wav";
+        String filename = "./music/audio.wav";
 
         // All the actual stuff like getting the .wav file and playing it
         File file = new File(filename);
