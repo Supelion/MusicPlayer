@@ -3,8 +3,10 @@ import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
 
-import javax.swing.JFrame;
 import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JFrame;
 import javax.swing.JButton;
 import javax.swing.ImageIcon;
 
@@ -37,20 +39,17 @@ public class Main {
         pause.setBackground(new Color(255, 255, 255));
         pause.addActionListener(e -> clip.stop());
 
-        ImageIcon logo = new ImageIcon("./images/logo.png");
-
         JFrame frame = new JFrame();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(null);
-        frame.setSize(500, 160);
-        frame.setVisible(true);
+        ImageIcon logo = new ImageIcon("./images/logo.png");
         frame.setTitle("Supelion's Music Player");
-        frame.setResizable(false);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setIconImage(logo.getImage());
         frame.getContentPane().setBackground(new Color(30, 215, 96));
+        frame.setSize(500, 160);
+        frame.setLayout(null);
+        frame.setVisible(true);
+        frame.setResizable(false);
         frame.add(pause);
         frame.add(start);
-
-        System.out.println("Exiting...");
     }
 }
