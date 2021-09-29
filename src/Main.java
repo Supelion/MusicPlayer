@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 
 import java.awt.Color;
-import java.awt.Font;
 
 import javax.swing.JFrame;
 import javax.swing.JButton;
@@ -22,16 +21,15 @@ public class Main {
         clip.open(audio);
         clip.start();
 
-        JButton start = new JButton();
-        start.setBounds(10, 10, 150, 50);
-        start.setText("Start / Resume");
+        JButton start = new JButton("Start / Resume", new ImageIcon("./images/resume.png"));
+        start.setBounds(10, 10, 170, 50);
         start.setFocusable(false);
         start.setBackground(new Color(255, 255, 255));
         start.setForeground(new Color(25, 20, 20));
         start.addActionListener(e -> clip.start());
 
-        JButton pause = new JButton();
-        pause.setBounds(300, 10, 150, 50);
+        JButton pause = new JButton("Pause", new ImageIcon("./images/pause.png"));
+        pause.setBounds(300, 10, 170, 50);
         pause.setText("Pause");
         pause.setFocusable(false);
         pause.setForeground(new Color(25, 20, 20));
