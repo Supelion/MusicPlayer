@@ -13,7 +13,6 @@ import javax.swing.ImageIcon;
 // The everything
 public class Main {
     public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
-        // Using JOptionPane to show the user an input dialog and asking the name of the .wav file. We add the extension manually later
         String filename = "./music/audio.wav";
 
         // All the actual stuff like getting the .wav file and playing it
