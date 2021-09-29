@@ -2,7 +2,9 @@
 
 cd src
 
+echo Compiling main.java
 javac Main.java
+echo Running main.java
 java Main
 
 echo.
