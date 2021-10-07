@@ -48,7 +48,7 @@ public class Main {
         // The actual frame of the music player app
         JFrame frame = new JFrame();
         ImageIcon logo = new ImageIcon("./images/logo.png");
-        frame.setTitle("Supelion's Music Player");
+        frame.setTitle("Music Player");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setIconImage(logo.getImage());
         frame.getContentPane().setBackground(new Color(249, 220, 126));
